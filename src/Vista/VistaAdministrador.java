@@ -6,6 +6,8 @@
 package Vista;
 
 import Modelo.Producto;
+import Modelo.UsuarioSistema;
+import java.util.ArrayList;
 
 /**
  *
@@ -27,5 +29,34 @@ public class VistaAdministrador {
 //        prod.setPrecio(0);
         
         return prod;
+    }
+    public void mostrarProductoEditar(Producto prod){
+        //mostrar los datos del producto en pantalla
+        //guarda los cambios
+    }
+    public void mostrarProductoStock(Producto prod){
+        //mostrar los datos del producto (solo el stock) en pantalla
+        //guarda los cambios
+    }
+    
+    public UsuarioSistema obtenerUsuario(){
+        //obtiene los datos de los textbox y crea el objeto UsuarioSistema
+        UsuarioSistema usuSis = new UsuarioSistema();
+//        usuSis.setUser(user);
+//        usuSis.setPassword(password);
+        return usuSis;
+    }
+    
+    public void mostrarUsuarioEditar(UsuarioSistema usuSis){
+        //mostrar los datos del usuario en pantalla
+        //guarda los cambios
+    }
+    public void mostrarProductos(ArrayList<Producto> productos){
+        //mostrar los productos en pantalla
+        
+    }
+    public void mostrarUsuarios(ArrayList<UsuarioSistema> usuarios){
+        //mostrar los usuarios en pantalla
+        
     }
 }

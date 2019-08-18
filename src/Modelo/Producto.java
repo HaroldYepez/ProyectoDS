@@ -17,6 +17,7 @@ public class Producto {
     protected float precio;
     protected String categoria;
     protected boolean estado;
+    protected int stock;
 
     public String getId() {
         return id;

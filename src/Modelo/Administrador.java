@@ -6,6 +6,7 @@
 package Modelo;
 
 import java.util.ArrayList;
+import Modelo.Inventario;
 
 /**
  *
@@ -19,32 +20,44 @@ public class Administrador extends UsuarioSistema{
         return true;
     }
     
-    public boolean modificarProducto(String id){
+    public Producto modificarProducto(String id){
+        //Producto prod = carga el prooducto de la base de datos
+        
+        return null;
+    }
+    
+    
+    
+    public Producto modificarStockProducto(String id){
+        //Producto prod = carga el prooducto de la base de datos
+        return null;
+    }
+    
+    public boolean ingresarUsuario(UsuarioSistema Usuario){
+         //ingresa el usuario en la base de datos
         return true;
     }
     
-    public boolean modificarStockProducto(String id){
-        return true;
-    }
-    
-    public boolean ingresarUsuario(String cedula){
-        return true;
-    }
-    
-    public boolean modificarUsuario(String cedula){
-        return true;
+    public UsuarioSistema modificarUsuario(String cedula){
+        //UsuarioSistema = carga el usuario de la base de datos
+        return null;
     }
     
     public boolean changeRol(UsuarioSistema user, String rol){
+        //ni idea
         return true;
     }
     
     public ArrayList<Producto> consultarProductos(){
-        return null;
+        ArrayList<Producto> productos = new ArrayList<Producto>();
+        //carga en la lista los productos desde la base de datos
+        return productos;
     }
     
-    public ArrayList<UsuarioSistema> consultarusuarios(){
-        return null;
+    public ArrayList<UsuarioSistema> consultarUsuarios(){
+        ArrayList<UsuarioSistema> usuarios = new ArrayList<UsuarioSistema>();
+        //carga en la lista los usuarios desde la base de datos
+        return usuarios;
     }
     
 }

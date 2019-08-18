@@ -5,6 +5,9 @@
  */
 package Modelo;
 
+import java.util.ArrayList;
+import java.util.Map;
+
 /**
  *
  * @author Harold
@@ -13,8 +16,13 @@ public class Inventario {
     
     protected int cantidadInicial;
     protected int cantidadDisponible;
+    protected static ArrayList<Producto> productos;
     
     public Producto buscarProducto(String id){
+        for(Producto p:productos){
+            if(p.getId().equals(id))
+                return p;
+        }
         return null;
     }
     
@@ -33,4 +41,9 @@ public class Inventario {
     public Producto filtrarBusqueda(String nombre,String descripcion,String categoria){
         return null;
     }
+
+    public ArrayList<Producto> getProductos() {
+        return productos;
+    }
+    
 }
