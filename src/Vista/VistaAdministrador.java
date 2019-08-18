@@ -26,6 +26,6 @@ public class VistaAdministrador {
 //        prod.setNombre(nombre);
 //        prod.setPrecio(0);
         
-        return null;
+        return prod;
     }
 }
