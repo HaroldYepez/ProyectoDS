@@ -13,7 +13,9 @@ import java.util.ArrayList;
  */
 public class Administrador extends UsuarioSistema{
     
-    public boolean ingresarProducto(String id){
+    public boolean ingresarProducto(Producto prod){
+        //ingresa el producto en la base de datos
+        
         return true;
     }
     

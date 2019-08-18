@@ -6,6 +6,7 @@
 package Controlador;
 
 import Modelo.Administrador;
+import Modelo.Producto;
 import Vista.VistaAdministrador;
 
 /**
@@ -18,5 +19,9 @@ public class CtrlAdministrador {
     
     public void controladorAdministracion(){
         
+    }
+    public void guadarProducto(){
+        Producto prod = vistaAdministrador.obtenerProducto();
+        administrador.ingresarProducto(prod);
     }
 }

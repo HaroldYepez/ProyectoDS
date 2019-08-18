@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Modelo.Producto;
+
 /**
  *
  * @author Harold
@@ -13,5 +15,17 @@ public class VistaAdministrador {
     
     public void showSceneAdministrador(){
         
+    }
+    public Producto obtenerProducto(){
+        //obtiene los datos de los textbox y crea el objeto producto
+        Producto prod = new Producto();
+//        prod.setId(id);
+//        prod.setCategoria(categoria);
+//        prod.setDescripcion(descripcion);
+//        prod.setEstado(true);
+//        prod.setNombre(nombre);
+//        prod.setPrecio(0);
+        
+        return null;
     }
 }
