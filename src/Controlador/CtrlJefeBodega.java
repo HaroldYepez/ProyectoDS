@@ -6,7 +6,10 @@
 package Controlador;
 
 import Modelo.JefeBodega;
+import Modelo.Producto;
+import Modelo.Ruta;
 import Vista.VistaJefeBodega;
+import java.util.ArrayList;
 
 /**
  *
@@ -18,5 +21,15 @@ public class CtrlJefeBodega {
     
     public void controladorJefeBodega(){
         
+    }
+    public void consultarProductos(){
+        ArrayList<Producto> productos = jefeBodega.consultarProductos();
+        vistaJefeBodega.mostrarProductos(productos);
+    }
+    
+    public boolean guardarRuta(){
+        Ruta ruta = vistaJefeBodega.obtenerRuta();
+        boolean valor = jefeBodega.crearRuta(ruta);
+        return valor;
     }
 }

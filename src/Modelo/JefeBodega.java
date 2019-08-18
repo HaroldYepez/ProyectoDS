@@ -19,11 +19,15 @@ public class JefeBodega {
     protected Queue<RepartidorBodega> colaRepartidores;
     protected Envio envio;    
     
-    public ArrayList<Producto> consultarProducto(){
-        return null;
+    public ArrayList<Producto> consultarProductos(){
+        ArrayList<Producto> productos = new ArrayList<Producto>();
+        //carga en la lista los productos desde la base de datos
+        return productos;
+        
     }
     
     public boolean crearRuta(Ruta ruta){
+        //guarda la ruta en la base de datos
         return true;
     }
     

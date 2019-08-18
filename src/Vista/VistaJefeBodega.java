@@ -7,6 +7,8 @@ package Vista;
 
 
 import Modelo.Envio;
+import Modelo.Producto;
+import Modelo.Ruta;
 import java.util.ArrayList;
 
 /**
@@ -21,5 +23,16 @@ public class VistaJefeBodega {
     
     public void showSceneJefeBodega(){
         
+    }
+    
+    public void mostrarProductos(ArrayList<Producto> productos){
+        //mostrar los productos en pantalla
+        
+    }
+    
+    public Ruta obtenerRuta(){
+        Ruta ruta = new Ruta();
+        //ruta.setDireccion(direccion);
+        return ruta;
     }
 }
