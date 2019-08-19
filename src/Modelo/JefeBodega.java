@@ -35,7 +35,8 @@ public class JefeBodega {
         return true;
     }
     
-    public boolean asignarRuta(RepartidorBodega repartidor){
-        return true;
+    public RepartidorBodega asignarRuta(){
+        RepartidorBodega rep = colaRepartidores.poll();
+        return rep;
     }
 }

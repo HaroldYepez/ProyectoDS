@@ -8,6 +8,7 @@ package Vista;
 
 import Modelo.Envio;
 import Modelo.Producto;
+import Modelo.RepartidorBodega;
 import Modelo.Ruta;
 import java.util.ArrayList;
 
@@ -34,5 +35,9 @@ public class VistaJefeBodega {
         Ruta ruta = new Ruta();
         //ruta.setDireccion(direccion);
         return ruta;
+    }
+    
+    public void mostrarRepartidor(RepartidorBodega rep){
+        //muestra al repartidor y la ruta asignados
     }
 }

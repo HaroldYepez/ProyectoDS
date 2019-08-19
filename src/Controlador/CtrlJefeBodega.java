@@ -7,6 +7,7 @@ package Controlador;
 
 import Modelo.JefeBodega;
 import Modelo.Producto;
+import Modelo.RepartidorBodega;
 import Modelo.Ruta;
 import Vista.VistaJefeBodega;
 import java.util.ArrayList;
@@ -31,5 +32,11 @@ public class CtrlJefeBodega {
         Ruta ruta = vistaJefeBodega.obtenerRuta();
         boolean valor = jefeBodega.crearRuta(ruta);
         return valor;
+    }
+    
+    public boolean asignarRuta(){
+        RepartidorBodega rep = jefeBodega.asignarRuta();
+        vistaJefeBodega.mostrarRepartidor(rep);
+        return true;
     }
 }
