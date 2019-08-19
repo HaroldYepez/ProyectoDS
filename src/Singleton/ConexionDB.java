@@ -16,17 +16,19 @@ import java.sql.Statement;
  */
 public class ConexionDB {
     private Connection coneccion;
-    private String user;
-    private String password;
-    private String db="";
-    private String host="localhost:8889";
+    private String user="root";
+    private String password="admin.1234";
+    private String db="tenoimport";
+    private String host="localhost:3306";
     private String server="jdbc:mysql://"+host+"/"+db;
 
     public Connection getConeccion() {
         coneccion=null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            coneccion=DriverManager.getConnection(server, user, password);
+            //coneccion=DriverManager.getConnection(server, user, password);
+            coneccion=DriverManager.getConnection("jdbc:mysql://127.0.0.1/tecnoimport?user=root&password=admin.1234");
+            
         }catch(Exception e){
             System.out.println(String.valueOf(e));    
         }

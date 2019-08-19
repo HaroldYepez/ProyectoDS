@@ -9,6 +9,9 @@ package Modelo;
  *
  * @author Harold
  */
+import Singleton.ConexionDB;
+import java.sql.SQLException;
+
 public class ProyectoDS {
 
     /**
@@ -16,6 +19,8 @@ public class ProyectoDS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ConexionDB conec=new ConexionDB();
+        conec.getConeccion();
     }
     
 }
