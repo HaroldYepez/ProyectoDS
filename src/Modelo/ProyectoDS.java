@@ -21,6 +21,7 @@ public class ProyectoDS {
         // TODO code application logic here
         ConexionDB conec=new ConexionDB();
         conec.getConeccion();
+        conec.getTabla("select * from empleado");
     }
     
 }
