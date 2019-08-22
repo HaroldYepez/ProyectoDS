@@ -22,6 +22,7 @@ public class ProyectoDS {
         ConexionDB conec=new ConexionDB();
         conec.getConeccion();
         conec.getTabla("select * from empleado");
+       
     }
     
 }

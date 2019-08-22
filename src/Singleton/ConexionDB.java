@@ -27,10 +27,11 @@ public class ConexionDB {
         coneccion=null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            coneccion=DriverManager.getConnection(server, user, password);
+            coneccion=(Connection) DriverManager.getConnection(server, user, password);
             //coneccion=DriverManager.getConnection("jdbc:mysql://127.0.0.1/tecnoimport?user=root&password=admin.1234");
             //DriverManager.GET
             System.out.println("Conexión");
+            //System.out.println(coneccion.getSchema());
         }catch(Exception e){
             System.out.println(String.valueOf(e));    
         }
